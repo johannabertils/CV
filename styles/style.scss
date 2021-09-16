@@ -1,16 +1,16 @@
 $darkgreen: #21221D;
-$ashgrey:rgba(177, 180, 167, 0.4);
-$offwhite: #FFFFEB;
+$ashgrey:rgba(159,155,144, 0.6);
+$offwhite: #fff;
 $darkgrey: #4B4C47;
-$purple: #472836;
+$purple: #512313;
 $white: #fff;
-
 
 html {
   box-sizing: border-box;
 }
 
 *,
+
 *:before,
 *:after {
   box-sizing: inherit;
@@ -110,17 +110,17 @@ body .menuToggle {
 .menu li {
   padding: 10px 0;
   font-size: 22px;
-  border-bottom: $darkgrey solid 1px;
+  border-bottom: $purple solid 1px;
   color: $darkgrey;
   font-family: montserrat, sans-serif;
 }
 
-.menu li a{
-  color: $darkgrey;
+.menu li a {
+  color: $purple;
 }
 
 .menu .icon {
-  color: $darkgrey;
+  color:  $purple;
   border-bottom: none;
   display: inline-block;
 }
@@ -135,7 +135,7 @@ body .menuToggle {
 }
 
 .menu li:hover {
-  background-color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
 }
 
 .menuToggle input:checked~ul {
@@ -144,13 +144,13 @@ body .menuToggle {
 
 /*--------startsida-----------*/
 main {
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
   background-size: cover;
   background-position: center center;
-  background-image: url(../img/girl-on-mountains.jpg);
-  background-color: $darkgreen;
+  background-image: url(../img/629345E8-37D4-4F7C-97AC-CA04AE6F95E9_1_105_c.jpeg);
 }
+
 
 .container {
   display: flex;
@@ -159,10 +159,12 @@ main {
 
 header {
   height: 100vh;
- float: right;
+  width: 50vw;
+  float: right;
   padding-right: 50px;
   text-align: center;
   justify-content: space-between;
+
 }
 
 .header-content {
@@ -170,7 +172,7 @@ header {
   bottom: 0;
   left: 0;
   padding: 0px 50px 20px 0px;
-  
+
 }
 
 /*--------scrolla ner-----------*/
@@ -215,25 +217,27 @@ article {
 
 h1 {
   margin: 0 auto 0 auto;
-  color: $offwhite;
-  font-size: 5.5rem;
+  height: 500px;
+  color: $purple;
+  font-size: 9rem;
   font-family: "open sans condensed", sans-serif;
   font-weight: 700;
   word-spacing: 100vw;
   text-align: right;
   text-transform: uppercase;
-  line-height: 100px;
+  line-height: 150px;
 }
 
 h2 {
   margin: 0 auto 0 auto;
-  color: $offwhite;
-  font-size: 2rem;
-  font-family: benchnine, sans-serif;
-  font-weight: 300;
-  text-transform: capitalize;
+  color: $purple;
+  font-size: 4rem;
+  font-family:  benchnine, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
   line-height: 30px;
   text-align: right;
+  margin-bottom: 200px; 
 }
 
 h3 {
@@ -278,7 +282,7 @@ a {
   text-decoration: none;
 }
 
-p a{
+p a {
   color: $purple;
 }
 
@@ -286,6 +290,12 @@ time {
   color: $purple;
   font-family: montserrat, sans-serif;
   font-weight: 300;
+}
+
+.list {
+  font-size: 1rem;
+  word-spacing: 20px;
+
 }
 
 /*-----------icons-----------*/
@@ -306,7 +316,13 @@ time {
 }
 
 /*--------mobile-----------*/
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
+
+  main {
+    width: 100vw;
+    height: 100vh;
+  }
+
   .page1 {
     width: 100vw;
     height: 100%;
@@ -343,19 +359,40 @@ time {
   .menu .menuicons {
     display: none;
   }
+
+  h1 {
+
+    font-size: 4rem;
+    line-height: 70px;
+    text-align: center;
+    height: 250px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: rem;
+
+  }
+
+
+  .header-content {
+    top: 450px;
+  }
 }
 
 /*--------mobile text-----------*/
 @media only screen and (max-width: 500px) {
-  h1{
-
-  font-size: 3rem;
-  line-height: 70px;
-  text-align: center;
+  h1 {
+    font-size: 3rem;
+    line-height: 70px;
+    text-align: center;
+    background-color: red;
+    padding-top: 100px;
   }
 
-  h2{
+  h2 {
     text-align: center;
+   
   }
 
   .header-content {
